@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Mad Libs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Funny Mad Libs</h1>
+    <form id="madLibsForm">
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" required>
+        
+        <label for="animal">Animal:</label>
+        <input type="text" id="animal" required>
+        
+        <label for="time">Time:</label>
+        <input type="text" id="time" required>
+        
+        <label for="emotion">Emotion:</label>
+        <input type="text" id="emotion" required>
+        
+        <label for="place">Place:</label>
+        <input type="text" id="place" required>
+        
+        <label for="food1">Food 1:</label>
+        <input type="text" id="food1" required>
+        
+        <label for="food2">Food 2:</label>
+        <input type="text" id="food2" required>
+        
+        <label for="activity">Activity:</label>
+        <input type="text" id="activity" required>
+        
+        <label for="person1">Person 1:</label>
+        <input type="text" id="person1" required>
+        
+        <label for="number">Number:</label>
+        <input type="number" id="number" required>
+        
+        <label for="person2">Person 2:</label>
+        <input type="text" id="person2" required>
+        
+        <button type="button" onclick="generateMadLibs()">Generate Mad Libs</button>
+    </form>
+    
+    <div id="madLibsStory" class="hidden">
+        <h2>Your Funny Mad Libs Story:</h2>
+        <p id="madLibsText"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
